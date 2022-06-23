@@ -1,0 +1,8 @@
+com\rdacompany\sportsdesktop\api\Constants.class
+com\rdacompany\sportsdesktop\util\Resources.class
+com\rdacompany\sportsdesktop\api\RdaSportsApiInterface.class
+com\rdacompany\sportsdesktop\ApplicationController.class
+com\rdacompany\sportsdesktop\domain\Customer.class
+com\rdacompany\sportsdesktop\api\Api.class
+com\rdacompany\sportsdesktop\domain\Employee.class
+com\rdacompany\sportsdesktop\SessionApplication.class

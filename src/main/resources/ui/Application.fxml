@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="269.0" prefWidth="458.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="267.0" prefWidth="378.0">
+               <children>
+                  <ListView fx:id="customerListView" layoutX="403.0" layoutY="55.0" prefHeight="387.0" prefWidth="402.0" />
+                  <ListView fx:id="employeeListView" layoutY="55.0" prefHeight="387.0" prefWidth="402.0" />
+                  <Text layoutX="109.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LISTADO DE EMPLEADOS" wrappingWidth="165.97658157348633" />
+                  <Text layoutX="536.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LISTADO DE CLIENTES" wrappingWidth="165.97658157348633" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </center>
+   <top>
+      <HBox alignment="CENTER" prefHeight="55.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="delete2" alignment="CENTER" promptText="ID EMPLEADO" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="21.55923843383789" />
+            <Button mnemonicParsing="false" onAction="#deleteEmployee" text="ELIMINAR EMPLEADO" />
+            <TextField fx:id="delete" alignment="CENTER" promptText="ID CLIENTE">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#deleteCustomer" text="ELIMINAR CLIENTE">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
